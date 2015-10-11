@@ -1,0 +1,1020 @@
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    font-family: 'Roboto',sans-serif;
+}
+
+#pageTitle {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.TABlock {
+    width: 240px;
+    float: left;
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out;
+    border-radius: 3px;
+    padding: 7px 7px 0 7px;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 10px;
+    width: 20%;
+    min-width: 100px !important;
+    position: relative;
+    z-index: 1;
+}
+
+.TABlock:hover {
+    /*background-color: #0e3136;*/
+    background-color: #222;
+}
+
+.TABlock:hover .seeMoreLink {
+    opacity: 1;
+    top: 5px;
+}
+
+.TABlock:hover .TAName {
+    border-color: #9a9a9a;
+}
+
+.TABlock:hover .contactList, .TABlock:hover .contactTitle {
+    visibility:visible;
+    opacity:1;
+    top: 0px;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.TAPicture {
+    width: 100%;
+    height: 175px;
+    position: relative;
+}
+
+.circlePicContainer {
+    width: 175px;
+    height: 175px;
+    border-radius: 87px;
+    -webkit-border-radius: 87px;
+    -moz-border-radius: 87px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    margin: 0 auto;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: background-size 0.3s linear;
+    -webkit-transition: background-size 0.3s linear;
+}
+
+.TAName, .TASection {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+.TASection{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.TAName{
+    font-weight: 100;
+    font-size: 22px;
+    margin-top: 7px;
+    border-bottom: 1px solid black;
+    transition: border 300ms ease-in-out;
+    -webkit-transition: border 300ms ease-in-out;
+}
+
+.TARowWrap {
+    margin: 0 auto;
+}
+
+.TARow {
+    margin-top: 5px;
+}
+
+.contactList {
+    text-align: center;
+}
+
+.contactItem {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 4px;
+    opacity: 0.6;
+}
+
+.contactItem:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#email {
+    background-image: url("mail4-01.png");
+}
+
+#gmail {
+    background-image: url("gmail.png");
+}
+
+#outlook {
+    background-image: url("outlook.png");
+}
+
+.contactList {
+    visibility: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 35px;
+    /*transition: visibility 0s linear 0.5s,opacity 0.5s linear;*/
+}
+
+.contactTitle {
+    color: #ffaf42;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0 0 0 ;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    visibility: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.positionBadge {
+    position: absolute;
+    color: #00223E;
+    background-color: #B09465;
+    /*background-color: #00223E; navy */
+    /*background-color: #B09465; old gold */
+    /*background-color: #E6AE27; gold */
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    white-space: nowrap;
+}
+
+.sortButton {
+    border-radius: 2px;
+    padding: 4px 10px;
+    background-color: #444;
+    color: #ffec5c;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    margin-left: 2px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+}
+
+.sortButton:hover{
+    background-color: #960000;
+    color: white;
+}
+
+#sortButtons {
+    text-align: center;
+    margin: 5px 0 35px 0;
+}
+
+.main-container {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.fixer-container {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+#TAWrap {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.grid {
+}
+
+#sortCode {
+    font-family: monospace;
+    color: #989898;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#adamsilvermanPic { 
+    background-image: url("TA_Pics/adam.jpg");
+}
+
+#adityagargPic { 
+    background-image: url("TA_Pics/aditya.jpg");
+    background-size: cover !important;
+}
+
+#alandongPic { 
+    background-image: url("TA_Pics/aland.jpg");
+}
+
+#alexanderloboPic { 
+    background-image: url("TA_Pics/alex_l.jpg");
+}
+
+#alizaincharaniaPic { 
+    background-image: url("TA_Pics/ali_c.jpg");
+}
+
+#ankitraghuramPic { 
+    background-image: url("TA_Pics/ankit1.png");
+    background-size: cover !important;
+}
+
+#benthompsonPic { 
+    background-image: url("TA_Pics/bthompson42.jpg");
+}
+
+#briannastacyPic { 
+    background-image: url("TA_Pics/brianna_s.jpg");
+}
+
+#chrisconreyPic { 
+    background-image: url("TA_Pics/cconrey3.jpg");
+}
+
+#chrisphamPic { 
+    background-image: url("TA_Pics/cpham9.jpg");
+}
+
+#davidmesinaPic { 
+    background-image: url("TA_Pics/dmesina3.jpg");
+}
+
+#edwardfoylePic { 
+    background-image: url("TA_Pics/edward.jpg");
+}
+
+#francestsennPic { 
+    background-image: url("TA_Pics/frances.jpg");
+}
+
+#hyderhasnainPic { 
+    background-image: url("TA_Pics/hyder_h.jpg");
+}
+
+#jamesfergusonPic { 
+    background-image: url("TA_Pics/jferguson38.jpg");
+}
+
+#jermainemedleyPic { 
+    background-image: url("TA_Pics/jermaine.jpg");
+}
+
+#jimmynguyenPic { 
+    background-image: url("TA_Pics/jimmy_n.jpg");
+}
+
+#johnmcgraelPic { 
+    background-image: url("TA_Pics/jmcgrael3.jpg");
+}
+
+#justingenselPic { 
+    background-image: url("TA_Pics/jgensel3.jpg");
+}
+
+#karayoganPic { 
+    background-image: url("TA_Pics/kara_y.jpg");
+}
+
+#karanshahPic { 
+    background-image: url("TA_Pics/karan_s.jpg");
+}
+
+#kellypessonPic { 
+    background-image: url("TA_Pics/kelly.jpg");
+}
+
+#mandysalmonPic { 
+    background-image: url("TA_Pics/mandys.png");
+}
+
+#mattoshaughnessyPic { 
+    background-image: url("TA_Pics/matthew_o.png");
+    background-size: cover !important;
+}
+
+#michaelavidanoPic { 
+    background-image: url("TA_Pics/mavidano.jpg");
+}
+
+#michaelspadaroPic { 
+    background-image: url("TA_Pics/michael_s.jpg");
+}
+
+#natashadeguntenPic { 
+    background-image: url("TA_Pics/natasha.jpg");
+}
+
+#nicholasbuttonPic { 
+    background-image: url("TA_Pics/nicholas_b.jpg");
+}
+
+#nickselbyPic { 
+    background-image: url("TA_Pics/nselby3.jpg");
+}
+
+#nishantroyPic { 
+    background-image: url("TA_Pics/nishant.jpg");
+}
+
+#omarmasriPic { 
+    background-image: url("TA_Pics/omar_m.jpg");
+}
+
+#peterkoplikPic { 
+    background-image: url("TA_Pics/peter_k.jpg");
+}
+
+#rachelsteppePic { 
+    background-image: url("TA_Pics/rsteppe3.jpg");
+}
+
+#rajpatelPic { 
+    background-image: url("TA_Pics/raj.jpg");
+}
+
+#rebeccacohenPic { 
+    background-image: url("TA_Pics/rebecca_cohen.png");
+    background-position: top !important;
+}
+
+#rebeccacottrillPic { 
+    background-image: url("TA_Pics/rcottrill3.jpg");
+}
+
+#robcosbyPic { 
+    background-image: url("TA_Pics/rcosby3.jpg");
+}
+
+#ryanwilliamsPic { 
+    background-image: url("TA_Pics/ryan.jpg");
+}
+
+#seanmihmPic { 
+    background-image: url("TA_Pics/sean.jpg");
+}
+
+#sivamanivasagamPic { 
+    background-image: url("TA_Pics/smanivasagam3.jpg");
+}
+
+#sreeramamurthytripuramalluPic { 
+    background-image: url("TA_Pics/sree.jpg");
+}
+
+#terrymaPic { 
+    background-image: url("TA_Pics/terry.jpg");
+}
+
+#thompsonbertronPic { 
+    background-image: url("TA_Pics/thompson_b.jpg");
+}
+
+#timothygreggPic { 
+    background-image: url("TA_Pics/tgregg6.jpg");
+}
+
+#tylernguyenPic { 
+    background-image: url("TA_Pics/tyler_n.jpg");
+}
+
+#tylerwanPic { 
+    background-image: url("TA_Pics/tyler_w.jpg");
+}
+
+#wesparsonPic { 
+    background-image: url("TA_Pics/twpv3.jpg");
+}
+
+#zacharyschlesingerPic { 
+    background-image: url("TA_Pics/zach_s.jpg");
+}
+
+#zoeturner-yovanovitchPic { 
+    background-image: url("TA_Pics/zoety.jpg");
+}
+
+#professorsmithPic { 
+    background-image: url("TA_Pics/prof_smith.jpg");
+}
+
+#professorhudachek-buswellPic { 
+    background-image: url("TA_Pics/prof_hb.jpg");
+    background-size: cover !important;
+}
+
+#professormcdanielPic { 
+    background-image: url("TA_Pics/prof_mcd.jpg");
+    background-size: cover !important;
+}
+
+
+.seeMoreLink {
+    position: absolute;
+    right: 7px;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: top 300ms ease-in-out;
+    -webkit-transition: top 300ms ease-in-out;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 2;
+    top: -15px;
+}
+
+.seeMoreLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+#popupCover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    background-color: black;
+    display: none;
+    opacity: 0.75;
+}
+
+#TAInfoPopup {
+    text-align: center;
+    position: fixed;
+    z-index: 4001;
+    background-color: white;
+    left:0;
+    right:0;
+    top: 15%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 4px;
+    font-family: 'Roboto',sans-serif;
+    width: 420px;
+    display: none;
+    border: 1px solid black;
+    visibility: visible !important;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+
+#TAPopupPic {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+#TAInfoSection {
+    width: 100%;
+}
+
+#TAPopupName {
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #4349d6;
+    color: white;
+    margin-bottom: 3px;
+    padding: 2px 0;
+    width: 185px;
+    float: right;
+}
+
+.circlePicContainer:hover {
+    /*background-size: 105% auto;*/
+}
+
+.recitationInfoIcon {
+    float:left;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2px;
+}
+
+.recitationInfoData {
+    float: left;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.teachIcon {
+    background-image: url("tutor.png");
+}
+
+.locationIcon {
+    background-image: url("location.png");
+}
+
+.timeIcon {
+    background-image: url("time.png");
+}
+
+.recitationInfoSection {
+    margin-left: 7px;
+}
+
+.funFactLabel {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    border-bottom: 1px solid #999;
+    background-color: #119aff;
+    padding: 6px 0;
+    opacity: 0.8;
+}
+
+#TAFunFacts {
+    margin-top: 10px;
+}
+
+.funFactSection {
+}
+
+.funFactData {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 500ms ease-in-out;
+    -webkit-transition: max-height 500ms ease-in-out;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 4px 0;
+    background-color: #119aff;
+}
+
+.funFactDataShow {
+    opacity: 1;
+    max-height: 100px;
+}
+
+
+
+#popupTAName {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: 300;
+    font-size: 25px;
+    padding: 2px 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#PopupPicDiv {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#recitationInfo, #helpdeskInfo {
+    float:left;
+    width: 50%;
+}
+
+.sectionTitle {
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.monday {
+    background-image: url("monday.png");
+}
+
+.tuesday {
+    background-image: url("tuesday.png");
+}
+
+.wednesday {
+    background-image: url("wednesday.png");
+}
+
+.thursday {
+    background-image: url("thursda.png");
+}
+
+.friday {
+    background-image: url("friday.png");
+}
+
+#recitationTitle {
+    color: #ff3838;
+}
+
+#helpDeskTitle {
+    color: #4d4dff;
+}
+
+.infoSectionWrap {
+    margin: 0px 0px 5px 0;
+}
+
+.borderright {
+    border-right: 1px solid #aaa;
+}
+
+#TAFunFactsSection {
+    width: 100%;
+    padding: 2px 0px 5px 0px;
+    background-color: #444;
+}
+
+#funFactsTitle {
+    font-weight: 100;
+    font-size: 25px;
+    float:left;
+    margin-right: 7px;
+    margin-left: 10px;
+    color: white;
+    padding-top: 4px;
+}
+
+.funFactButton {
+    vertical-align: middle;
+    font-size: 17px;
+    border: 1px solid green;
+    color: green;
+    padding: 2px 6px;
+    margin-left: 4px;
+    border-radius: 2px;
+    margin-top: 4px;
+    display: inline-block;
+    transition: all 300ms ease-in-out;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.funFactButton:hover{
+    background-color: green;
+    color: white;
+}
+
+#funFactButtons {
+    float:left;
+    text-align: center;
+    margin: 2px 0;
+}
+
+.funFactContainer {
+    height: 0px;
+    position: absolute;
+    overflow: hidden;
+    top: 200px;
+    left: 0px;
+
+    width: 100%;
+    color: white;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.funFactContainerShow{
+    background-color: rgba(68,68,68,0.95);
+    height: 200px !important;
+    top: 0px;
+}
+
+.arrow_box {
+    position: relative;
+    background: #444;
+}
+.arrow_box:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(68, 68, 68, 0);
+    border-right-color: #444;
+    border-width: 20px;
+    margin-top: -20px;
+}
+
+#funFactInnerText {
+    padding: 10px 25px;
+}
+
+#funFactTitle {
+    font-weight: 100;
+    font-size: 30px;
+    padding: 7px 15px;
+    border-bottom: 1px solid gray;
+}
+
+#closePopup {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    transition: background-color 300ms ease-in-out;
+}
+
+#closePopup:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#basicInfo {
+    clear: both;
+    width: 100%;
+}
+
+.gradButton {
+    background-image: url("grad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 12px;
+    height: 20px;
+}
+
+.gradButton:hover {
+    background-image: url("grad_white.png");
+}
+
+#TAEmail {
+    font-size: 13px;
+    text-align: right;
+    color: #fff;
+    font-weight: 100;
+    position: relative;
+    top: -2px;
+}
+
+.adamsilvermanhorizontal{ 
+    background-image: url("TAHorizontalPics/adam_s.PNG"); 
+}
+
+.adityagarghorizontal{ 
+    background-image: url("TAHorizontalPics/aditya2.jpg"); 
+}
+
+.alandonghorizontal{ 
+    background-image: url("TAHorizontalPics/alan2.jpg"); 
+}
+
+.alexanderlobohorizontal{ 
+    background-image: url("TAHorizontalPics/alexlobo2.jpg"); 
+}
+
+.alizaincharaniahorizontal{ 
+    background-image: url("TAHorizontalPics/Alizain2.jpg"); 
+}
+
+.ankitraghuramhorizontal{ 
+    background-image: url("TAHorizontalPics/ankit2.jpg"); 
+}
+
+.benthompsonhorizontal{ 
+    background-image: url("TAHorizontalPics/bent2.jpg"); 
+}
+
+.briannastacyhorizontal{ 
+    background-image: url("TAHorizontalPics/brianna2.jpg"); 
+}
+
+.chrisconreyhorizontal{ 
+    background-image: url("TAHorizontalPics/chrisc2.jpg"); 
+}
+
+.chrisphamhorizontal{ 
+    background-image: url("TAHorizontalPics/chrisp2.jpg"); 
+}
+
+.davidmesinahorizontal{ 
+    background-image: url("TAHorizontalPics/david2.jpg"); 
+}
+
+.edwardfoylehorizontal{ 
+    background-image: url("TAHorizontalPics/edward2.jpg"); 
+}
+
+.francestsennhorizontal{ 
+    background-image: url("TAHorizontalPics/frances2.jpg"); 
+}
+
+.hyderhasnainhorizontal{ 
+    background-image: url("TAHorizontalPics/hyder2.jpg"); 
+}
+
+.jamesfergusonhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.jermainemedleyhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.jimmynguyenhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.johnmcgraelhorizontal{ 
+    background-image: url("TAHorizontalPics/john2.png");
+}
+
+.justingenselhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.karayoganhorizontal{ 
+    background-image: url("TAHorizontalPics/Kara2.jpg"); 
+}
+
+.karanshahhorizontal{ 
+    background-image: url("TAHorizontalPics/karan1.jpg"); 
+}
+
+.kellypessonhorizontal{ 
+    background-image: url("TAHorizontalPics/kelly2.png"); 
+}
+
+.mandysalmonhorizontal{ 
+    background-image: url("TAHorizontalPics/mandy2.jpg"); 
+}
+
+.mattoshaughnessyhorizontal{ 
+background-image: url("TAHorizontalPics/matthew2.jpg"); 
+}
+
+.michaelavidanohorizontal{ 
+    background-image: url("TAHorizontalPics/MichaelA2.jpg"); 
+}
+
+.michaelspadarohorizontal{ 
+    background-image: url("TAHorizontalPics/MichaelS2.jpg"); 
+}
+
+.natashadeguntenhorizontal{ 
+    background-image: url("TAHorizontalPics/natasha_horizontal.jpg"); 
+}
+
+.nicholasbuttonhorizontal{ 
+    background-image: url("TAHorizontalPics/nicholasb2.jpg"); 
+}
+
+.nickselbyhorizontal{ 
+    background-image: url("TAHorizontalPics/selby2.jpg"); 
+}
+
+.nishantroyhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.omarmasrihorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.peterkoplikhorizontal{ 
+    background-image: url("TAHorizontalPics/koplik2.jpg"); 
+}
+
+.rachelsteppehorizontal{ 
+    background-image: url("TAHorizontalPics/rachel2.jpg");
+    background-position: top !important;
+}
+
+.rajpatelhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.rebeccacohenhorizontal{ 
+    background-image: url("TAHorizontalPics/rebecca_cohen_horizontal.jpg"); 
+}
+
+.rebeccacottrillhorizontal{ 
+    background-image: url("TAHorizontalPics/rebecca_horizontal.jpg"); 
+}
+
+.robcosbyhorizontal{ 
+    background-image: url("TAHorizontalPics/rob2.jpg"); 
+}
+
+.ryanwilliamshorizontal{ 
+    background-image: url("TAHorizontalPics/ryan2.PNG"); 
+}
+
+.seanmihmhorizontal{ 
+    background-image: url("TAHorizontalPics/sean2.jpg"); 
+}
+
+.sivamanivasagamhorizontal{ 
+    background-image: url("TAHorizontalPics/siva2.jpg"); 
+}
+
+.sreeramamurthytripuramalluhorizontal{ 
+    background-image: url("TAHorizontalPics/sree2.jpg"); 
+    background-position: top !important;
+}
+
+.terrymahorizontal{ 
+    background-image: url("TAHorizontalPics/Terry2.jpg"); 
+}
+
+.thompsonbertronhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.timothygregghorizontal{ 
+    background-image: url("TAHorizontalPics/Timothy2.jpg"); 
+}
+
+.tylernguyenhorizontal{ 
+    background-image: url("TAHorizontalPics/tylern2.jpg"); 
+}
+
+.tylerwanhorizontal{ 
+    background-image: url("TAHorizontalPics/tylerw2.jpg"); 
+}
+
+.wesparsonhorizontal{ 
+    background-image: url("TAHorizontalPics/Wes2.jpg"); 
+}
+
+.zacharyschlesingerhorizontal{ 
+    background-image: url("TAHorizontalPics/classified.png"); 
+}
+
+.zoeturner-yovanovitchhorizontal{ 
+    background-image: url("TAHorizontalPics/Zoey2.jpg"); 
+}
+
+.professorsmithhorizontal{ 
+    background-image: url("TAHorizontalPics/prof_smith2.jpg"); 
+}
+
+.professorhudachek-buswellhorizontal{ 
+    background-image: url("TAHorizontalPics/prof_hb2.png"); 
+}
+
+.professormcdanielhorizontal{ 
+    background-image: url("TAHorizontalPics/prof_mcd2.png"); 
+}
+

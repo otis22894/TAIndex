@@ -1,0 +1,1256 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CS 1371 TA Index</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+        <link href='TA%20Index.css' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="iso.js"></script>
+    </head>
+
+    <body>
+        <div id="pageWrap">
+
+            <div id="popupCover"></div>
+            <div id="TAInfoPopup">
+                <div id="closePopup">&#x2717;</div>
+                <div id="TAPopupPic">
+                    <div id="PopupPicDiv"></div>
+                    <div id="popupTAName">
+                        <div id="TAEmail"></div>
+                    </div>
+                </div>
+                <div id="TAFunFactsSection" class="clearfix">
+                    <div id="funFactsTitle">Fun Facts:</div>
+                    <div id="funFactButtons" class="clearfix">
+                        <!-- EXAMPLE OF WHAT WILL BE INJECTED FOR EACH TA WHEN THE SEE MORE BUTTON IS CLICKED
+
+<div class="funFactButton" data-question="Favorite Hashtag" data-answer="#imdonewithyou">1</div>
+<div class="funFactButton" data-question="Favorite Matlab Function" data-answer="isequal()">2</div>
+<div class="funFactButton" data-question="Favorite Homework Problem" data-answer="wheresWaldo">3</div>
+<div class="funFactButton" data-question="Story" answer="This is a really long story to test what happens when multiple lines are required on the TA Fun fact">4</div>
+<div class="funFactButton gradButton" data-question="Class and Major" answer="4th Year Chemical Engineer"></div>
+
+-->
+                    </div>
+                    <div class="funFactContainer">
+                        <div id="funFactTitle"></div>
+                        <div id="funFactInnerText"></div>
+                    </div>
+                </div>
+                <div id="TAInfoSection" class="clearfix">
+                    <div id="recitationInfo">
+                        <div class="sectionTitle" id="recitationTitle">Recitation</div>
+                        <div class="infoSectionWrap borderright">
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon teachIcon"></div>
+                                <div class="recitationInfoData" id="popupSection">A01</div>
+                            </div>
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon locationIcon"></div>
+                                <div class="recitationInfoData" id="popupLocation">Van Leer 202</div>
+                            </div>
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon timeIcon"></div>
+                                <div class="recitationInfoData" id="popupTime">Wednesday 6-7:30</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="helpdeskInfo">
+                        <div class="sectionTitle" id="helpDeskTitle">Help Desk</div>
+                        <div class="infoSectionWrap">
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon wednesday"></div>
+                                <div class="recitationInfoData">2-3, 3-5</div>
+                            </div>
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon thursday"></div>
+                                <div class="recitationInfoData">2-3, 3-5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+        <div id="pageTitle">Meet Your Awesome TAs</div>
+        <div id="sortCode">>> TAOrder = sort(TAList, <span id="sortByText">'Section'</span>)</div>
+        <div id="sortButtons">
+            <div class="sortButton" id="sortByName">Name</div>
+            <div class="sortButton" id="sortBySection">Section</div>
+            <div class="sortButton" id="sortByPosition">Position</div>
+            <div class="sortButton" id="sortByRandom">I'm Feeling Lucky</div>
+        </div>
+        <div class="grid clearfix">
+
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="adamsilvermanPic"></div>
+                    <div class="positionBadge">Test Team STA</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Chemical and Biomolecular Engineer">Adam Silverman</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Tues 6:05-7:25">B02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Adam:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:asilverman6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="asilverman6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=asilverman6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=asilverman6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="adityagargPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Electrical Engineer">Aditya Garg</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Tues 12:05-1:25">HP</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Aditya:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:agarg45@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="agarg45@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=agarg45@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=agarg45@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="alandongPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Electrical Engineer">Alan Dong</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 217" data-recitationTime="Wed 3:05-4:25">A06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Alan:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:adong9@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="adong9@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adong9@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=adong9@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="alexanderloboPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical Engineer">Alexander Lobo</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 219" data-recitationTime="Tues 6:05-7:25">A02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Alexander:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:alobo7@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="alobo7@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alobo7@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=alobo7@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="alizaincharaniaPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Engineer">Alizain Charania</div>
+                    <div class="TASection" data-recitationLocation="COC (CCB) 102" data-recitationTime="Mon 7:00-8:30">LWT</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Alizain:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:acharania8@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="acharania8@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=acharania8@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=acharania8@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="ankitraghuramPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Biomedical Engineer">Ankit Raghuram</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 219" data-recitationTime="Tues 6:05-7:25">A02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Ankit:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:araghuram3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="araghuram3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=araghuram3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=araghuram3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="benthompsonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="5th Year Mechanical Engineer">Ben Thompson</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Wed 4:35-5:55">B06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Ben:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:bthompson42@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="bthompson42@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bthompson42@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=bthompson42@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="briannastacyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical Engineer">Brianna Stacy</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Thurs 4:35-5:55">B04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Brianna:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:bstacey3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="bstacey3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bstacey3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=bstacey3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="chrisconreyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Engineer">Chris Conrey</div>
+                    <div class="TASection" data-recitationLocation="Cherry Emerson 320" data-recitationTime="Tues 6:05-7:25">C04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Chris:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:cconrey3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="cconrey3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cconrey3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=cconrey3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="chrisphamPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Biomedical Engineer">Chris Pham</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 117" data-recitationTime="Thurs 6:05-7:25">A05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Chris:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:cpham9@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="cpham9@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cpham9@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=cpham9@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="davidmesinaPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Biomedical Engineer">David Mesina</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Thurs 4:35-5:55">A04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact David:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:dmesina3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="dmesina3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dmesina3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=dmesina3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="edwardfoylePic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Computer Science">Edward Foyle</div>
+                    <div class="TASection" data-recitationLocation="Coll of Computing 17" data-recitationTime="Tues 4:35 -5:55">A03</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Edward:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:efoyle3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="efoyle3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=efoyle3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=efoyle3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="francestsennPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Biomedical Engineer">Frances Tsenn</div>
+                    <div class="TASection" data-recitationLocation="ES&T L1205" data-recitationTime="Tues 6:05-7:25">D01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Frances:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:ftsenn3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="ftsenn3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ftsenn3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=ftsenn3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="hyderhasnainPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Biomedical Engineer">Hyder Hasnain</div>
+                    <div class="TASection" data-recitationLocation="Van Leer C457" data-recitationTime="Thurs 4:35-5:55">D04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Hyder:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:hhasnain3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="hhasnain3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hhasnain3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=hhasnain3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="jamesfergusonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="5th Year Electrical Engineer">James Ferguson</div>
+                    <div class="TASection" data-recitationLocation="COC (CCB) 102" data-recitationTime="Mon 7:00-8:30">LWT</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact James:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:jferguson38@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="jferguson38@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jferguson38@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=jferguson38@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="jermainemedleyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Mechanical Engineer">Jermaine Medley</div>
+                    <div class="TASection" data-recitationLocation="ES&T L1205" data-recitationTime="Tues 6:05-7:25">D01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Jermaine:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:jmedley6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="jmedley6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmedley6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=jmedley6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="jimmynguyenPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Biomedical Engineer/Computer Science">Jimmy Nguyen</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 217" data-recitationTime="Thurs 6:05-7:25">B05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Jimmy:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:jnguyen46@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="jnguyen46@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jnguyen46@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=jnguyen46@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="johnmcgraelPic"></div>
+                    <div class="positionBadge">Course Manager</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="6th Year Mechanical Engineer">John McGrael</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Tues 12:05-1:25">HP</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact John:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:jmcgrael3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="jmcgrael3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmcgrael3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=jmcgrael3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="justingenselPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Engineer">Justin Gensel</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Thurs 4:35-5:55">B04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Justin:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:jgensel3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="jgensel3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jgensel3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=jgensel3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="karayoganPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Chemical and Biomolecular Engineer">Kara Yogan</div>
+                    <div class="TASection" data-recitationLocation="Howey(Physics) L5" data-recitationTime="Tues 4:35-5:55">C01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Kara:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:kyogan3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="kyogan3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kyogan3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=kyogan3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="karanshahPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Engineer">Karan Shah</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 109" data-recitationTime="Thurs 6:05-7:25">C05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Karan:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:kshah88@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="kshah88@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kshah88@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=kshah88@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="kellypessonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Biomedical Engineer">Kelly Pesson</div>
+                    <div class="TASection" data-recitationLocation="Cherry Emerson 320" data-recitationTime="Tues 6:05-7:25">D02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Kelly:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:kpesson6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="kpesson6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kpesson6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=kpesson6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="mandysalmonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical and Biomolecular Engineer">Mandy Salmon</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 111" data-recitationTime="Tues 4:35-5:55">B01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Mandy:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:msalmon6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="msalmon6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=msalmon6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=msalmon6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="michaelavidanoPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Chemical and Biomolecular Engineer">Michael Avidano</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 111" data-recitationTime="Wed 6:05-7:25">B03</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Michael:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:mavidano3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="mavidano3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mavidano3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=mavidano3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="michaelspadaroPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Mechanical Engineer">Michael Spadaro</div>
+                    <div class="TASection" data-recitationLocation="Cherry Emerson 320" data-recitationTime="Tues 6:05-7:25">D02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Michael:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:mspadaro3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="mspadaro3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mspadaro3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=mspadaro3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="natashadeguntenPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Mechanical Engineer">Natasha de Gunten</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 111" data-recitationTime="Wed 6:05-7:25">B03</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Natasha:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:ndegunten3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="ndegunten3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ndegunten3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=ndegunten3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="nicholasbuttonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Undecided Engineer">Nicholas Button</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 217" data-recitationTime="Wed 6:05-7:25">A03</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Nicholas:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:nbutton22@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="nbutton22@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nbutton22@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=nbutton22@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="nickselbyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Mechanical Engineer">Nick Selby</div>
+                    <div class="TASection" data-recitationLocation="Howey(Physics) L5" data-recitationTime="Tues 4:35-5:55">C01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Nick:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:nselby3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="nselby3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nselby3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=nselby3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="nishantroyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Science">Nishant Roy</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 217" data-recitationTime="Thurs 6:05-7:25">D05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Nishant:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:nroy6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="nroy6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nroy6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=nroy6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="omarmasriPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical Engineer">Omar Masri</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 109" data-recitationTime="Tues 6:05-7:25">C02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Omar:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:omasri3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="omasri3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=omasri3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=omasri3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="peterkoplikPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Computer Science">Peter Koplik</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 113" data-recitationTime="Thurs 6:05-7:25">B05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Peter:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:pkoplik3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="pkoplik3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pkoplik3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=pkoplik3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="rachelsteppePic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Mechanical Engineer">Rachel Steppe</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Wed 6:05-7:25">C03/C06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Rachel:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rsteppe3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rsteppe3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rsteppe3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rsteppe3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="rajpatelPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Computer Engineer">Raj Patel</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Wed 6:05-7:25">D03/D06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Raj:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rpatel321@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rpatel321@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rpatel321@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rpatel321@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="rebeccacohenPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Material Science">Rebecca Cohen</div>
+                    <div class="TASection" data-recitationLocation="Van Leer C457" data-recitationTime="Thurs 4:35-5:55">D04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Rebecca:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rcohen95@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rcohen95@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rcohen95@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rcohen95@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="rebeccacottrillPic"></div>
+                    <div class="positionBadge">Homework Team STA</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="5th Year Nuclear & Radiological Engineer">Rebecca Cottrill</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 111" data-recitationTime="Tues 4:35-5:55">B01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Rebecca:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rcottrill3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rcottrill3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rcottrill3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rcottrill3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="robcosbyPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Mechanical Engineer">Rob Cosby</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Thurs 4:35-5:55">A04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Rob:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rcosby3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rcosby3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rcosby3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rcosby3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="ryanwilliamsPic"></div>
+                    <div class="positionBadge">Head TA</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Computer Engineer">Ryan Williams</div>
+                    <div class="TASection" data-recitationLocation="COC (CCB) 017" data-recitationTime="Tues 4:35 -5:55">A01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Ryan:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:rwilliams306@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="rwilliams306@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rwilliams306@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=rwilliams306@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="seanmihmPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical Engineer">Sean Mihm</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Wed 6:05-7:25">C03/C06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Sean:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:smihm3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="smihm3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=smihm3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=smihm3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="sivamanivasagamPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical Engineer">Siva Manivasagam</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 109" data-recitationTime="Tues 6:05-7:25">C02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Siva:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:smanivasagam3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="smanivasagam3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=smanivasagam3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=smanivasagam3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="sreeramamurthytripuramalluPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Electrical Engineer">Sreeramamurthy Tripuramallu</div>
+                    <div class="TASection" data-recitationLocation="COC (CCB) 017" data-recitationTime="Tues 4:35 -5:55">A01</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Sreeramamurthy:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:stripuramallu3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="stripuramallu3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stripuramallu3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=stripuramallu3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="terrymaPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Aerospace Engineer">Terry Ma</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 113" data-recitationTime="Thurs 6:05-7:25">B05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Terry:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:terry.ma@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="terry.ma@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=terry.ma@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=terry.ma@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="thompsonbertronPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Mechanical Engineer">Thompson Bertron</div>
+                    <div class="TASection" data-recitationLocation="Cherry Emerson 320" data-recitationTime="Tues 6:05-7:25">C04</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Thompson:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:tbertron3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="tbertron3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tbertron3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=tbertron3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="timothygreggPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Material Science">Timothy Gregg</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 109" data-recitationTime="Thurs 6:05-7:25">C05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Timothy:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:tgregg6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="tgregg6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tgregg6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=tgregg6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="tylernguyenPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Computer Engineer">Tyler Nguyen</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 217" data-recitationTime="Wed 3:05-4:25">A06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Tyler:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:tnguyen341@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="tnguyen341@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tnguyen341@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=tnguyen341@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="tylerwanPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Biomedical Engineer">Tyler Wan</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 211" data-recitationTime="Wed 4:35-5:55">B06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Tyler:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:twan8@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="twan8@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=twan8@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=twan8@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="wesparsonPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Mechanical Engineer">WES Parson</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 117" data-recitationTime="Thurs 6:05-7:25">A05</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact WES:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:twpv3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="twpv3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=twpv3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=twpv3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="zacharyschlesingerPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="2nd Year Chemical and Biomolecular Engineer">Zachary Schlesinger</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Tues 6:05-7:25">B02</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Zachary:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:zschlesinger3@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="zschlesinger3@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zschlesinger3@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=zschlesinger3@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="zoeturner-yovanovitchPic"></div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="3rd Year Civil Engineer">Zoe Turner-Yovanovitch</div>
+                    <div class="TASection" data-recitationLocation="Instr Center 209" data-recitationTime="Wed 6:05-7:25">D03/D06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Zoe:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:zoety@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="zoety@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zoety@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=zoety@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="professorsmithPic"></div>
+                    <div class="positionBadge">Instructor</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="51st Year Aerospace Engineer">Professor Smith</div>
+                    <div class="TASection" data-recitationLocation="CCB 101" data-recitationTime="MWF 10:30 - 11:20">A01-A06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Professor:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:david.smith@cc.gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="david.smith@cc.gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=david.smith@cc.gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=david.smith@cc.gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="professorhudachek-buswellPic"></div>
+                    <div class="positionBadge">Instructor</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="N/A">Professor Hudachek-Buswell</div>
+                    <div class="TASection" data-recitationLocation="CCB 137" data-recitationTime="MWF 10-11, 12-1">A00, B01-B06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Professor:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:mhb6@mail.gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="mhb6@mail.gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mhb6@mail.gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=mhb6@mail.gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="professormcdanielPic"></div>
+                    <div class="positionBadge">Instructor</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="N/A">Professor McDaniel</div>
+                    <div class="TASection" data-recitationLocation="CCB 138" data-recitationTime="MWF 2-3, 3-4">C01-C06, D01-D06</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Professor:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:mcdaniel@cc.gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="mcdaniel@cc.gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mcdaniel@cc.gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=mcdaniel@cc.gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="TABlock">
+                <div class="seeMoreLink">See More</div>
+                <div class="TAPicture">
+                    <div class="circlePicContainer" id="mattoshaughnessyPic"></div>
+                    <div class="positionBadge">SD Team STA</div>
+                </div>
+                <div class="TAInfo">
+                    <div class="TAName" data-classInfo="4th Year Electrical Engineer">Matt O'Shaughnessy</div>
+                    <div class="TASection" data-recitationLocation="N/A" data-recitationTime="N/A">N/A</div>
+                </div>
+                <div class="contactSection">
+                    <div class="contactTitle">Contact Matt:</div>
+                    <div class="contactList">
+                        <a title="desktop" href="mailto:moshaughnessy6@gatech.edu?subject=[CS1371]" class="contactItem" id="email" data-email="moshaughnessy6@gatech.edu"></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=moshaughnessy6@gatech.edu&su=[CS1371]" class="contactItem" id="gmail"></a>
+                        <a href="http://mail.live.com/default.aspx?page=Compose&to=moshaughnessy6@gatech.edu&subject=[CS1371]" class="contactItem" id="outlook"></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+    <script>
+
+        var TAMap = new Map();
+
+        TAMap.set('Adam Silverman',[[],[['Favorite Matlab Function','imwrite()'],['Favorite Hashtag','#1'],['Favorite Homework Problem','criminalMinds'],['Hobbies','tennis, ice cream'],['Most embarrassing story from middle school','Didn\'t change in gym class for first week in front of anybody'],['Team sum(mask) or team length(vec(mask))','sum dat logical!'],['Pro switch or anti switch','Sometimes, I write things like switch x>5, because I think it looks cleaner.'],['Most embarrassing recitation story','Every week in recitation, I say something stupid.'],['Which team are you on?','Test Team'],['Favorite quote','\"So we beat on, boats against the current, borne back ceaselessly into the past.\"'],['Advise to your 5th grade self','Try new things!'],['I cry while grading tests when...','students capitalize the \"f\" in \"function\".'],['Favorite Song','\"The Sound of Silence\"--Simon and Garfunkel'],['I am the best in the world at:','pun wars'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','I wanted to play the trumpet, but I couldn\'t blow through the mouthpiece in 4th grade, so I picked up the clarinet instead. :('],['When I was 5 years old, I wanted to be a...','artist. A year later I found out that I had no artistic talent whatsoever.'],['Advise to yourself while you were taking the class','The best way to learn the material is to practice it alone--play around in the Command Window with the functions until you totally get how they work--then start on the HW. And start on the HW early!'],['Best Joke','So, there’s this new novelty beermaking business in town called Specialty Froths. What’s really cool about Specialty Froths is that they make beers with flavored froths—honey or chocolate or fruit or what have you. Anyway it’s a major hit. The company’s owned by a partnership of three guys: Luke, Max, and Bill. Luke owns the business, Max is in charge of making the beer, and Bill is the froth guy—he invents new flavors and tries them out and stuff. Well, anyway, Max gets greedy and decides he wants a ½ share of the business. He thinks Bill’s job isn’t as hard as everyone makes it out to be. So, he spends six months watching Bill, trying to learn as much as he can about the process of frothing. After that time, he decides that yeah, he could do it too. So one day, when he thinks he’s got it all settled, he comes into work with a shotgun and shoots Bill dead in cold blood. The ruckus brings in Luke, who, seeing the dead body on the floor, screams, “You killed my frother!” “No Luke. I am your frother.”']]]);
+        TAMap.set('Aditya Garg',[[['monday','6-7'],['tuesday','3-4'],['friday','2-3']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Alan Dong',[[['monday','3-5'],['thursday','3-4']],[['Favorite Matlab Function','eml_asteroids'],['Favorite Hashtag','#hashbrowns'],['Favorite Homework Problem','rom2num obv'],['Hobbies','guitar, piano'],['Most embarrassing story from middle school','I gelled my hair into spikes and hung paperclips from the spikes to attempt to straighten them to impress the ladies on the last day of school.'],['Team sum(mask) or team length(vec(mask))','sum(double(mask)) I don\'t play by your rules.'],['Pro switch or anti switch','only if it\'s cleaner'],['Most embarrassing recitation story','Nothing. I don\'t make mistakes in recitation, so there is nothing to be embarrassed about.'],['Which team are you on?','Software Development (TECH TEAM WILL NEVER DIE)'],['Favorite quote','\"'],['Advise to your 5th grade self','Learn MATLAB right this instant.'],['I cry while grading tests when...','A students tries to index a text file by appending the filename with square brackets.'],['Favorite Song','Pokémon Theme (English Dub) - Jason Paige'],['I am the best in the world at:','Making fun of Tyler Nguyen.'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','it was actually orchestra camp, and nothing out of the ordinary happened.'],['When I was 5 years old, I wanted to be a...','6 year old.'],['Advise to yourself while you were taking the class','DO MORE MATLAB.'],['Best Joke','What do you call a deer with no eyes? No i-dear. What do you call a fish with no eyes? Fsh.']]]);
+        TAMap.set('Alexander Lobo',[[['wednesday','7-8'],['thursday','6-8']],[['Favorite Matlab Function','sortrows()'],['Favorite Hashtag','#Mac'],['Favorite Homework Problem','ausralianSecretAgent()'],['Hobbies','playing with dogs, reading, watching SUITS, playing nintendo video games, running, swimming'],['Most embarrassing story from middle school','I was caught doing the Egyptian dance to this song on video, and it went viral, and it was bad.'],['Team sum(mask) or team length(vec(mask))','Team sum(mask), duh'],['Pro switch or anti switch','PRO SWITCH'],['Most embarrassing recitation story','I almost broke a couple thousand dollars worth of technology when everything simultaneously, and miraculously fell off the computer desk.'],['Which team are you on?','Homework Team (is Dope)'],['Favorite quote','\"Never settle for less than your best.\" - Mr. Margiotta (5th grade teacher)'],['Advise to your 5th grade self','Start studying Chemical Engineering sooner. Seriously, just buy a couple books and read them.'],['I cry while grading tests when...','people use find(mask)'],['Favorite Song','a-ha - Take On Me'],['I am the best in the world at:','Mario Kart, hand down'],['Mac (*barf*) or PC?','MACINTOSH (4LIFE)'],['This one time at band camp...','<insert interesting story here>'],['When I was 5 years old, I wanted to be a...','(an) Engineer...'],['Advise to yourself while you were taking the class','Start Homework before 10pm Friday night. 9pm sounds pretty good'],['Best Joke','“Don’t worry; I’ll hold your stuff. You just worry about making friends.” - Cargo Shorts']]]);
+        TAMap.set('Alizain Charania',[[['wednesday','6-8'],['thursday','4-5']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Ankit Raghuram',[[['tuesday','4-6'],['thursday','4-5']],[['Favorite Matlab Function','Fprintf'],['Favorite Hashtag','I don\'t really hashtag'],['Favorite Homework Problem','Nqueens'],['Hobbies','Sports'],['Most embarrassing story from middle school','I used to spike my hair.. That\'s pretty weird'],['Team sum(mask) or team length(vec(mask))','Sum(mask)'],['Pro switch or anti switch','Pro switch'],['Most embarrassing recitation story','When I said cell array, it sounded like celery'],['Which team are you on?','Tech'],['Favorite quote','If people are not meant to be eaten, butchering them is of no use'],['Advise to your 5th grade self','Read more'],['I cry while grading tests when...','People use find as a catch all'],['Favorite Song','Lose yourself'],['I am the best in the world at:','Making paper footballs'],['Mac (*barf*) or PC?','Pc'],['This one time at band camp...','I used to play the clarinet?'],['When I was 5 years old, I wanted to be a...','Garbage man'],['Advise to yourself while you were taking the class','Wait for recitation to start the homework'],['Best Joke','Default to Adam \'s']]]);
+        TAMap.set('Ben Thompson',[[['monday','7-8'],['thursday','5-7']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Brianna Stacy',[[['tuesday','6-8'],['thursday','6-7']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Chris Conrey',[[['wednesday','5-7'],['thursday','6-7']],[['Favorite Matlab Function','load handel; sound(y,Fs)'],['Favorite Homework Problem','image2ascii'],['Hobbies','Arduino, Soldering, Playing Band Music'],['Team sum(mask) or team length(vec(mask))','length(vec(mask))'],['Pro switch or anti switch','Pro-Switch when the occasion arises'],['Which team are you on?','Test Team'],['Favorite quote','\"I\'ll never let my schooling interfere with my education\"'],['Advise to your 5th grade self','Get a haircut and talk to people'],['I cry while grading tests when...','Students run through the alphabet twice while naming variables'],['Mac (*barf*) or PC?','Linux...*cough'],['When I was 5 years old, I wanted to be a...','\"Eletrical Enjnear\"'],['Advise to yourself while you were taking the class','Get a haircut and talk to people']]]);
+        TAMap.set('Chris Pham',[[['monday','2-3'],['wednesday','3-4'],['friday','2-3']],[['Favorite Matlab Function','strcmp();'],['Favorite Homework Problem','Ottendorf'],['Hobbies','Tennis!!'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','Pro switch'],['Which team are you on?','Test-Team, Best-team.'],['Favorite quote','\"Beat the average.\"'],['I cry while grading tests when...','I see iteration/recursion when it\'s not needed.. :\'('],['Favorite Song','Most Ed Sheeran and Eminem stuff'],['I am the best in the world at:','Batman: Arkham video games.'],['Mac (*barf*) or PC?','PC'],['Advise to yourself while you were taking the class','Learn recursion..'],['Best Joke','Why do valley girls always travel in odd numbers? Because they can\'t even.']]]);
+        TAMap.set('David Mesina',[[['monday','2-3'],['monday','4-5'],['thursday','2-3']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Edward Foyle',[[['thursday','7-8'],['friday','4-5']],[['Favorite Matlab Function','bwconncomp'],['Favorite Hashtag','#YOLO'],['Favorite Homework Problem','RPSLS'],['Hobbies','Ultimate Frisbee, Playing Piano, Coding'],['Most embarrassing story from middle school','Asked a girl out using a song. She said no.'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','pro switch'],['Which team are you on?','Homework Team (is Dope)'],['Favorite quote','The larger the island of knowledge, the longer the shoreline of wonder. -- Ralph Sockman'],['I cry while grading tests when...','strcmp(str, key) == true'],['Favorite Song','I don\'t know, but Kendrick Lamar is a boss'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','CS 1371 TA'],['Advise to yourself while you were taking the class','go to help desk']]]);
+        TAMap.set('Frances Tsenn',[[['monday','4-5'],['tuesday','2-3'],['friday','2-3']],[['Favorite Matlab Function','cat() meowmeow'],['Hobbies','Netfliiiiiix'],['Team sum(mask) or team length(vec(mask))','length(vec(mask))'],['Which team are you on?','TESTTEAMBESTTEAM'],['Favorite quote','Remember, remember, this is now, and now, and now. Live it, feel it, cling to it. I want to become acutely aware of all I’ve taken for granted.\"'],['Advise to your 5th grade self','Be patient. People think in different ways and do things at their own pace.'],['I cry while grading tests when...','vec(find(mask==true))'],['Mac (*barf*) or PC?','both!'],['This one time at band camp...','I realized that I don\'t play a band instrument. And it was awkward since my parents already left.'],['When I was 5 years old, I wanted to be a...','a unicorn or a dentist'],['Advise to yourself while you were taking the class','Don\'t start homework on Friday.'],['Best Joke','Why did the elephant fall out of the tree? (It was dead.) Why did the second elephant fall out of the tree? (It was glued to the first elephant.) Why did the third elephant fall out of the tree? (It thought it was a game.) Why did the tree fall down? (It thought it was an elephant.)']]]);
+        TAMap.set('Hyder Hasnain',[[['tuesday','3-4'],['thursday','3-4'],['thursday','6-8'],['friday','4-5']],[['Favorite Matlab Function','sprintf()'],['Favorite Hashtag','#HTID'],['Favorite Homework Problem','recursiveCampanile'],['Hobbies','Rowing, Hiking, Exploring, Reading, Hanging out with friends,'],['Most embarrassing story from middle school','The entire 3 years'],['Team sum(mask) or team length(vec(mask))','length(vec(mask))'],['Pro switch or anti switch','Pro'],['Most embarrassing recitation story','I haven\'t had any yet :)'],['Which team are you on?','Homework Team (Is Dope)'],['Favorite quote','\"Either we have no dreams or our dreams are interesting. One must learn to be awake in the same fashion: either not at all, or in an interesting manner.\" - Nietzsche'],['Advise to your 5th grade self','Be more confident'],['I cry while grading tests when...','The only problem someone gets right is the one I\'m grading :('],['Favorite Song','Something by Alt-J or'],['I am the best in the world at:','... being me :)'],['Mac (*barf*) or PC?','Mac :)'],['This one time at band camp...','Never went to band camp :('],['When I was 5 years old, I wanted to be a...','4th grader'],['Advise to yourself while you were taking the class','Uhh... it\'s not that hard.'],['Best Joke','\"What\'s the difference between an enzyme and a hormone?\" \"You can\'t hear an enzyme.\"']]]);
+        TAMap.set('James Ferguson',[[['tuesday','6-8'],['thursday','7-8']],[['Favorite Homework Problem','footballMath'],['Hobbies','Snowboarding, Motorcycles'],['Most embarrassing story from middle school','I farted'],['Team sum(mask) or team length(vec(mask))','Are we masking with logicals?'],['Pro switch or anti switch','Ride Goofy but switch also'],['Most embarrassing recitation story','I farted. and it smelled.'],['Which team are you on?','Test Team!'],['Favorite quote','All Bill Murray Quotes'],['Advise to your 5th grade self','Stop farting'],['I cry while grading tests when...','Nested LOOPS!'],['Favorite Song','Freaky Tales - Too $hort'],['I am the best in the world at:','riding motorcycles'],['Mac (*barf*) or PC?','Mac, but apple is starting to sux'],['This one time at band camp...','no one farted'],['When I was 5 years old, I wanted to be a...','cop'],['Advise to yourself while you were taking the class','silent doesn\'t mean deadly']]]);
+        TAMap.set('Jermaine Medley',[[['wednesday','2-4'],['friday','2-3']],[['Favorite Matlab Function','find()'],['Favorite Hashtag','#PeopleBeSnitchin'],['Favorite Homework Problem','Deez'],['Hobbies','Caring for Deez'],['Most embarrassing story from middle school','Stepping on Deez'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','Dropped Deez'],['Which team are you on?','Homework'],['Favorite quote','\"I am the master of my fate, I am the captain of my soul.\"'],['Advise to your 5th grade self','Start push ups now'],['I cry while grading tests when...','They leave the page blank.'],['Favorite Song','2 Chainz - Birthday Song'],['I am the best in the world at:','Eating'],['Mac (*barf*) or PC?','Mac'],['This one time at band camp...','I started a mosh-pit.'],['When I was 5 years old, I wanted to be a...','Real One.'],['Advise to yourself while you were taking the class','You\'re going to be a trill TA one day so don\'t give up.'],['Best Joke','Knock knock! Who\'s there? D! D who? Deez.']]]);
+        TAMap.set('Jimmy Nguyen',[[['tuesday','4-6'],['thursday','5-6']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('John McGrael',[[],[['Favorite Matlab Function','cellfun'],['Favorite Hashtag','No.'],['Favorite Homework Problem','scottSterling'],['Hobbies','All things music.'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','Pro!!'],['Mac (*barf*) or PC?','Mac!'],['When I was 5 years old, I wanted to be a...','Rockstar.'],['Best Joke','Adam\'s jokes.']]]);
+        TAMap.set('Justin Gensel',[[['wednesday','2-4'],['friday','4-5']],[['Favorite Matlab Function','why'],['Favorite Hashtag','none'],['Favorite Homework Problem','Ottendorf Cipher'],['Hobbies','Video games, fishing, hunting'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','I kept messing up writing a function header on the first day of recitation.'],['Which team are you on?','Test Team'],['Favorite quote','\"Don\'t watch the clock; do as it does. Keep Going.\"'],['Advise to your 5th grade self','Growing up isn\'t as fun as it looks'],['I cry while grading tests when...','Variables are named a-z'],['Favorite Song','Could Have Been Me'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','Paleontologist'],['Advise to yourself while you were taking the class','Start the homework early']]]);
+        TAMap.set('Kara Yogan',[[['wednesday','6-7'],['friday','3-5']],[['Favorite Matlab Function','why'],['Favorite Hashtag','#cactus'],['Favorite Homework Problem','Kaleidoscope'],['Hobbies','Cactus gardening, drawing'],['Most embarrassing story from middle school','While at an awkward writing contest, some guy asked me to dance with him. I screamed \"I DON\'T TALK TO PEOPLE\" in front of everyone and ran away.'],['Team sum(mask) or team length(vec(mask))','sum(mask). Less for me to write'],['Pro switch or anti switch','Anti switch'],['Most embarrassing recitation story','Probably lying to my recitation about array indexing.'],['Which team are you on?','TEST TEAM BEST TEAM'],['Favorite quote','\"You can grow flowers from where dirt used to be\"'],['Advise to your 5th grade self','NASA doesn\'t cure cancer. Sorry.'],['I cry while grading tests when...','People write nothing. Hurts my heart.'],['Favorite Song','Yellow by Coldplay'],['I am the best in the world at:','Being a unicorn.'],['Mac (*barf*) or PC?','Both.'],['This one time at band camp...','I bruised a trumpet player.'],['When I was 5 years old, I wanted to be a...','A dinosaur. Like actually tho.'],['Advise to yourself while you were taking the class','Don\'t freak out- YOU GOT THIS.'],['Best Joke','Replace all the vowels in your name with \"oob\". Try it. Just trust me.']]]);
+        TAMap.set('Karan Shah',[[['wednesday','4-6'],['friday','2-3']],[['Favorite Matlab Function','Magic'],['Favorite Homework Problem','Criminal Minds'],['Hobbies','Watching and Playing Sports'],['Team sum(mask) or team length(vec(mask))','Team sum(mask)'],['Pro switch or anti switch','Anti Switch'],['Most embarrassing recitation story','None yet but coming soon'],['Which team are you on?','Tech Team'],['Advise to your 5th grade self','Do more excersise and eat right to get taller.'],['Mac (*barf*) or PC?','PC'],['Advise to yourself while you were taking the class','Start homework early']]]);
+        TAMap.set('Kelly Pesson',[[['monday','4-5'],['tuesday','2-3'],['friday','2-3']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Mandy Salmon',[[['monday','3-4'],['monday','5-6'],['thursday','3-4']],[['Favorite Matlab Function','Penny()'],['Favorite Homework Problem','RPSL'],['Hobbies','Swimming piano knitting'],['Team sum(mask) or team length(vec(mask))','Length(vec(mask))'],['Pro switch or anti switch','Pro'],['Most embarrassing recitation story','None im perfect'],['Which team are you on?','Best team'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','Farmer'],['Advise to yourself while you were taking the class','Go to review sessions and take good notes']]]);
+        TAMap.set('Matt OShaughnessy',[[],[['Favorite Matlab Function','bsxfun'],['Favorite Homework Problem','recursiveCampanile'],['Hobbies','music, politics, watching football'],['Favorite Song','better than revenge (just kidding don\'t put that on)'],['When I was 5 years old, I wanted to be a...','musician'],['Advise to yourself while you were taking the class','Pay attention in recitation!'],['Best Joke','frother']]]);
+        TAMap.set('Michael Avidano',[[['monday','2-3'],['friday','2-4']],[['Favorite Matlab Function','syms'],['Favorite Hashtag','#nope'],['Favorite Homework Problem','All of recursion'],['Hobbies','Backpacking, Cryptography'],['Most embarrassing story from middle school','I probably ran into something while walking in middle school. I do that a lot.'],['Team sum(mask) or team length(vec(mask))','sum(mask), but only in MATLAB'],['Pro switch or anti switch','Pro switch'],['Most embarrassing recitation story','Most semesters, I accidentally walk into the classroom of my previous semester.'],['Which team are you on?','Test Team (best team)'],['Favorite quote','\"The most dangerous phrase in the language is, \'We\'ve always done it this way.\'\" -- Rear Admiral Grace Hopper'],['Advise to your 5th grade self','Find something you love in everything you do. Otherwise, it probably isn\'t worth doing.'],['I cry while grading tests when...','strcmp(str1, str2) == 1.'],['Favorite Song','Maybe - Yiruma (or Disney songs)'],['I am the best in the world at:','predicting pop quiz dates and topics.'],['Mac (*barf*) or PC?','Both! But Mac for integration reasons.'],['This one time at band camp...','I made a Big Bird mask for Character day.'],['When I was 5 years old, I wanted to be a...','doctor'],['Advise to yourself while you were taking the class','Read code, write code, occasionally sleep.'],['Best Joke','What type of bear dissolves in water? A polar bear! (successfully used on tests to get credit)']]]);
+        TAMap.set('Michael Spadaro',[[['monday','7-8'],['thursday','3-4'],['friday','3-4']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Natasha de Gunten',[[],[['Favorite Matlab Function','matlabSymbol'],['Favorite Hashtag','#gottem'],['Favorite Homework Problem','evolvePokemon'],['Hobbies','Playing with my cat'],['Most embarrassing story from middle school','I called my teacher mom...multiple times.'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','I burnt cookies for my recitation once and a student made sure to comment about it on my CIOS survey'],['Which team are you on?','Test Team Best Team'],['Favorite quote','To understand recursion, you must first understand recursion.'],['Advise to your 5th grade self','Learn to cook before leaving home...'],['I cry while grading tests when...','Variables are named A -> Z'],['Favorite Song','Never Stop - SafetySuit'],['I am the best in the world at:','sleeping'],['Mac (*barf*) or PC?','Mac'],['When I was 5 years old, I wanted to be a...','Veterinarian'],['Advise to yourself while you were taking the class','Just do the homework.'],['Best Joke','Thank you student loans for helping me get through college. I dont think I could every repay you.']]]);
+        TAMap.set('Nicholas Button',[[['wednesday','5-6.R2-3'],['friday','3-4']],[['Favorite Matlab Function','why'],['Favorite Hashtag','#HTID'],['Favorite Homework Problem','slidinDemDMs'],['Hobbies','Ultimate frisbee, trumpet playing'],['Most embarrassing story from middle school','I think my entire time at middle school was an embarrassing story'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','Trying to code a round function and just completely having no clue what to do'],['Which team are you on?','Homework team #isdope'],['Favorite quote','\"SCOTT STERLING!!! The man. The myth. The legend.\"'],['Advise to your 5th grade self','If you don\'t know whether she likes you, try slidinDemDMs'],['I cry while grading tests when...','strcmp(str) == 1'],['Favorite Song','Only the good die young -- Billy Joel'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','We played a 99 stock smash game at 2 in the morning'],['When I was 5 years old, I wanted to be a...','Rocket scientist'],['Advise to yourself while you were taking the class','Don\'t try to find Waldo'],['Best Joke','Test team, best team #lolz']]]);
+        TAMap.set('Nick Selby',[[['thursday','2-3'],['thursday','5-7']],[['Favorite Matlab Function','deal'],['Favorite Hashtag','gathsah#'],['Favorite Homework Problem','WheelOfFortune'],['Hobbies','Politics'],['Most embarrassing story from middle school','The whole thing'],['Team sum(mask) or team length(vec(mask))','[~,ans]=deal(fprintf(fopen(\'root.dat\',\'w\'),num2str(length(vec(find(mask))))),str2num(fgetl(fopen(\'root.dat\',\'r\'))))'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','Kid plays video of my speech on his phone full volume while I lecture'],['Which team are you on?','Best team'],['Favorite quote','And let this be a lesson to you all. Nobody beats Vitas Gerulaitis 17 times in a row - Vitas Gerulaitis, tennis player, on winning his first match after sixteen consecutive losses'],['Advise to your 5th grade self','Never touch matlab'],['Favorite Song','Are You Gonna Be My Girl - Jet'],['I am the best in the world at:','nothing, probably'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','Geologist. My parents told me geologists hunted for candy rocks'],['Advise to yourself while you were taking the class','WHY DIDN\'T YOU LISTEN TO ME?!'],['Best Joke','Ask me when you have some time to spare']]]);
+        TAMap.set('Nishant Roy',[[['tuesday','3-5'],['friday','4-5']],[['Favorite Matlab Function','xpbombs (run in Command Window)'],['Favorite Hashtag','#SorryNotSorry'],['Favorite Homework Problem','battleTanks'],['Hobbies','Basketball, Music, Netflix'],['Most embarrassing story from middle school','Thought my friend was cursing at me, so I screamed a Hindi swear word back at him'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','ANTI'],['Most embarrassing recitation story','Got students to write a function to reverse a string. Used \'THIS\'. Came out very close to a word that I shouldn\'t be using as a TA.'],['Which team are you on?','Homework team IS DOPE!'],['Favorite quote','“The voice of Love seemed to call to me, but it was a wrong number.”  P.G. Wodehouse, Very Good, Jeeves!'],['Advise to your 5th grade self','Don\'t bother with the drums, learn some Java you nitwit.'],['I cry while grading tests when...','Students use == instead of strcmp'],['Favorite Song','Are You Lonesome Tonight - Elvis Presley'],['I am the best in the world at:','Downing spicy food'],['Mac (*barf*) or PC?','Mac'],['When I was 5 years old, I wanted to be a...','Dinosaur'],['Advise to yourself while you were taking the class','Go to EVERY recitation. TAs are your best friend.'],['Best Joke','The dyslexic devil worshipper sold his soul to Santa.']]]);
+        TAMap.set('Omar Masri',[[['wednesday','4-5'],['wednesday','6-7'],['thursday','5-6']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Peter Koplik',[[['thursday','5-6'],['friday','2-3'],['friday','4-5']],[['Favorite Matlab Function','wrldtrv'],['Favorite Hashtag','#follow'],['Favorite Homework Problem','sixDegreesOfWaldo or scottSterling'],['Hobbies','Lacrosse, chess'],['Most embarrassing story from middle school','I broke a window in one of my classrooms with a bouncy ball. That was one loud teacher.'],['Team sum(mask) or team length(vec(mask))','sum(mask). Definitely.'],['Pro switch or anti switch','anti-switch'],['Most embarrassing recitation story','Fortunately, I don\'t have one. Yet...'],['Which team are you on?','Tech Team'],['Favorite quote','\"Build a man a fire, and he\'ll be warm for a day. Set a man on fire, and he\'ll be warm for the rest of his life.\"'],['Advise to your 5th grade self','Save any video game stuff you have now because it\'ll be worth a fortune in like 10 years.'],['I cry while grading tests when...','You write 1/0 instead of true/false.'],['I am the best in the world at:','Probably nothing.'],['Mac (*barf*) or PC?','Linux, you bottom-feeders.'],['This one time at band camp...','Wait, do you want me to complete the quote?'],['When I was 5 years old, I wanted to be a...','6 year old/Ninja'],['Advise to yourself while you were taking the class','Thank your TAs for all the hard work they do :)'],['Best Joke','What did the bird say when he flew into the window? Ohhh the pane...']]]);
+        TAMap.set('Rachel Steppe',[[['monday','6-8'],['friday','3-4']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Raj Patel',[[['tuesday','2-4'],['friday','3-4']],[['Favorite Matlab Function','why()'],['Hobbies','Cars, computers'],['Team sum(mask) or team length(vec(mask))','length(vec(mask)) or length(find(mask)). sum(mask) makes me cringe.'],['Pro switch or anti switch','Pro switch'],['Which team are you on?','Test team, the best team.'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','I wasn\'t there.'],['When I was 5 years old, I wanted to be a...','race car driver.']]]);
+        TAMap.set('Rebecca Cohen',[[['monday','5-7'],['thursday','3-4']],[['Hobbies','Shopping! both online and in stores! Horseback Riding, crafting'],['Most embarrassing story from middle school','One time in class my friend said the word beans and I could not stop laughing so the teacher had to ask me to leave class till I could \"pull it together\"'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','anti Switch'],['Which team are you on?','Homework'],['Favorite quote','\"You can never be Overdressed or Overeducated\" - Oscar Wilde'],['Advise to your 5th grade self','It is okay to get a B in speaking if everyone in the class got that grade'],['I cry while grading tests when...','when there is more than one nested for loop'],['Favorite Song','Ol\' Red (Blake Shelton)'],['I am the best in the world at:','Finding out about peoples lives'],['Mac (*barf*) or PC?','Mac!!'],['When I was 5 years old, I wanted to be a...','I wanted to own my own bakery'],['Advise to yourself while you were taking the class','If you need help ask for it! We want you to succeed!'],['Best Joke','Everything I say obviously, because people laugh at me all the time']]]);
+        TAMap.set('Rebecca Cottrill',[[],[['Favorite Matlab Function','meshgrid()'],['Favorite Hashtag','#imDoneWithYou #amirite'],['Favorite Homework Problem','slidinDemDMs()'],['Team sum(mask) or team length(vec(mask))','Team length(vec(mask)) all day, every day.'],['Most embarrassing recitation story','Let\'s just say, I can\'t draw, and there was this one images recitation where things went awry when I tried to draw on the board.'],['Which team are you on?','Homework Team (is Dope)'],['Favorite quote','\"It does not do well to dwell on dreams and forget to live, remember that.\" ~ Albus Dumbledore'],['I cry while grading tests when...','students confuse == and strcmp().'],['Favorite Song','\"Smile\" - Avril Lavigne'],['When I was 5 years old, I wanted to be a...','Detective!!'],['Best Joke','Why don\'t you ever see Hippos hiding in the trees? .....Because they\'re really good at it!!']]]);
+        TAMap.set('Rob Cosby',[[['wednesday','2-4'],['thursday','2-3']],[['Favorite Matlab Function','deal( )'],['Favorite Homework Problem','ottendorf'],['Hobbies','anything related to baseball, volunteering'],['Team sum(mask) or team length(vec(mask))','Team length(vec(mask))'],['Pro switch or anti switch','Anti switch, but sometimes it\'s ok'],['Most embarrassing recitation story','losing xpbombs (Minesweeper) on the first click when demonstrating how good I was at it'],['Which team are you on?','HW Team'],['Favorite quote','\"Don\'t give up...Don\'t ever give up.\" - Jim Valvano'],['Advise to your 5th grade self','Farther along, you\'ll understand why'],['I cry while grading tests when...','The other TAs make me grade more harshly... :('],['Favorite Song','\"100 Years\", Five for Fighting'],['I am the best in the world at:','Not getting angry'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','Professional baseball player'],['Advise to yourself while you were taking the class','Practice hand-writing out homework problems before you type anything into Matlab: it helps a TON']]]);
+        TAMap.set('Ryan Williams',[[],[['Favorite Matlab Function','cellfun()'],['Favorite Hashtag','#hashtag'],['Favorite Homework Problem','sixDegreesOfWaldo'],['Hobbies','Adrenaline activities, coding'],['Most embarrassing story from middle school','Ripped my pants (in the middle of the day) and had to hide it for 2 periods.'],['Team sum(mask) or team length(vec(mask))','Whichever, as long as you know how to index'],['Pro switch or anti switch','Anti switch (if all day)'],['Most embarrassing recitation story','Wyan Williams weally woves the color wed'],['Which team are you on?','All the teams'],['Favorite quote','Education without values, as useful as it is, seems rather to make man a more clever devil.'],['Advise to your 5th grade self','The Apple stock is going to skyrocket, go get some.'],['I cry while grading tests when...','if var == true'],['Favorite Song','https://www.youtube.com/watch?v=91RZYO1cv_o'],['I am the best in the world at:','Sarcasm'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','Pilot'],['Advise to yourself while you were taking the class','Numerical methods is going to be on the final'],['Best Joke','*See Adam\'s Frother Joke*']]]);
+        TAMap.set('Sean Mihm',[[['wednesday','4-5'],['thursday','2-3'],['friday','3-4']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Siva Manivasagam',[[['thursday','4-5'],['friday','2-3'],['friday','4-5']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Sreeramamurthy Tripuramallu',[[['tuesday','6-7'],['thursday','4-6']],[['Favorite Matlab Function','sprintf(\'%s\',str)'],['Favorite Hashtag','#GeorgiaTech'],['Favorite Homework Problem','structures Pokemon (involved recursion)'],['Hobbies','Basketball'],['Most embarrassing story from middle school','Walked into girls bathroom'],['Team sum(mask) or team length(vec(mask))','sum(sum(mask))'],['Pro switch or anti switch','Anti switch'],['Most embarrassing recitation story','None yet'],['Which team are you on?','Test Jacob'],['Favorite quote','\"Fire\"'],['Advise to your 5th grade self','Don\'t worry everything will work out'],['I cry while grading tests when...','Students delete values from an array'],['Favorite Song','This is too difficult to think of rn'],['I am the best in the world at:','Dunking a basketball'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','Never in band camp'],['When I was 5 years old, I wanted to be a...','A stay at home dad (still want to be)'],['Advise to yourself while you were taking the class','Don\'t worry about bombing an exam'],['Best Joke','Can\'t think of one rn']]]);
+        TAMap.set('Terry Ma',[[['monday','3-4'],['monday','5-6'],['thursday','3-4']],[['Favorite Matlab Function','regexp'],['Favorite Hashtag','#tbt'],['Favorite Homework Problem','NQueens'],['Hobbies','Flying airplanes'],['Most embarrassing story from middle school','Thought a girl was a guy'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','Depending on situation'],['Most embarrassing recitation story','Making an array incorrectly'],['Which team are you on?','HW team'],['Favorite quote','It involves cuss words...'],['Advise to your 5th grade self','Keep your hair short and clean cut'],['I cry while grading tests when...','==true'],['Favorite Song','Lose Yourself'],['I am the best in the world at:','everything'],['Mac (*barf*) or PC?','Ubuntu'],['This one time at band camp...','I stayed home?'],['When I was 5 years old, I wanted to be a...','Train Conductor'],['Advise to yourself while you were taking the class','Be smarter'],['Best Joke','Don\'t got one']]]);
+        TAMap.set('Thompson Bertron',[[['tuesday','5-6'],['thursday','6-8']],[['Favorite Matlab Function','input()'],['Hobbies','Improv and Hiking'],['Most embarrassing story from middle school','I was stabbed with a pencil and passed out on the first day of class.'],['Team sum(mask) or team length(vec(mask))','sum(mask)'],['Pro switch or anti switch','Anti switch'],['Advise to your 5th grade self','Be more careful with staples.'],['Favorite Song','Don\'t Ask Me Why by Great Caesar'],['Mac (*barf*) or PC?','Mac'],['When I was 5 years old, I wanted to be a...','A garbage truck driver (I\'d get so much free stuff!).'],['Best Joke','My inherent lack of coordination']]]);
+        TAMap.set('Timothy Gregg',[[['wednesday','4-6'],['thursday','4-5']],[['Favorite Matlab Function','deal'],['Favorite Homework Problem','Scott Sterling'],['Hobbies','Magic: The Gathering, Running, eating'],['Most embarrassing story from middle school','middle school'],['Team sum(mask) or team length(vec(mask))','sum (mask)'],['Pro switch or anti switch','anti-switch'],['Which team are you on?','Homework'],['Favorite quote','They don\'t think it be like it is, but it do.'],['Advise to your 5th grade self','Get out and run you tub of lard.'],['I cry while grading tests when...','I see the alphabet on the left of the page'],['Favorite Song','Danger - Twin Forks'],['I am the best in the world at:','Zoning out'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','adult. We can all dream.'],['Best Joke','Why are your butt cheeks vertical instead of horizontal?']]]);
+        TAMap.set('Tyler Nguyen',[[['tuesday','2-4'],['thursday','3-4']],[['Favorite Matlab Function','Sort'],['Favorite Hashtag','#Whatsahashtag'],['Favorite Homework Problem','N-Queens'],['Hobbies','Tennis, League, Anime'],['Most embarrassing story from middle school','I was fat'],['Team sum(mask) or team length(vec(mask))','team length(vec(mask)) all day'],['Pro switch or anti switch','Anti Switch'],['Most embarrassing recitation story','alan giving me a lesson on how to draw an ampersand in front of the class'],['Which team are you on?','Test Team'],['Favorite quote','\"There is nothing noble in being superir\'or to your fellow man\" -Ernest Hemingway'],['Advise to your 5th grade self','You do you BABY'],['I cry while grading tests when...','People try to bs an open ended question when they clearly have no idea whats going on'],['Favorite Song','Cake by the Ocean- DNCE (at the moment)'],['I am the best in the world at:','Sounding confident about...anything'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','This dude hoped into my shower naked when I was a sophomore after drills were completed for the day. It was weird. We kind of locked eyes and he started singing to me.'],['When I was 5 years old, I wanted to be a...','Lawyer'],['Advise to yourself while you were taking the class','Take the homework seriously'],['Best Joke','\"\"']]]);
+        TAMap.set('Tyler Wan',[[['wednesday','6-7'],['friday','2-4']],[['Favorite Matlab Function','cumsum()'],['Favorite Hashtag','#nochill'],['Favorite Homework Problem','kaleidoscope'],['Hobbies','ice hockey, volleyball, movies, desserts'],['Most embarrassing story from middle school','I called a girl a whale.'],['Team sum(mask) or team length(vec(mask))','length(find(mask))'],['Pro switch or anti switch','anti switch'],['Most embarrassing recitation story','It hasn\'t happened yet.'],['Which team are you on?','Team Jacob'],['Favorite quote','\"Squidmaster?\"'],['I cry while grading tests when...','a student uses conditionals on Test 1.'],['Favorite Song','Collard Greens, because he told me it is'],['I am the best in the world at:','wasting time watching late night talk show videos.'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','This sounds like the beginning of a Sree story.'],['When I was 5 years old, I wanted to be a...','not a, THE Spider-Man.'],['Advise to yourself while you were taking the class','You should\'ve paid attention towards the end of the semester.'],['Best Joke','There are so many, how can I just choose pun?']]]);
+        TAMap.set('WES Parson',[[['monday','5-6'],['monday','7-8'],['wednesday','6-7']],[['Favorite Matlab Function','help'],['Favorite Hashtag','#FoShoBro'],['Favorite Homework Problem','Passed rating'],['Hobbies','Sail, board games, billiards'],['Team sum(mask) or team length(vec(mask))','Sum(mask)'],['Pro switch or anti switch','Pro'],['Which team are you on?','TEST'],['Favorite quote','\"Be better\"'],['Advise to your 5th grade self','Do whatever you want until 9th grade, that is when things matter'],['I cry while grading tests when...','People beat the trick questions'],['I am the best in the world at:','Being a smart Alec - talking back - real world trolling'],['Mac (*barf*) or PC?','PC'],['This one time at band camp...','People continued making bad life decisions'],['When I was 5 years old, I wanted to be a...','Astronaut'],['Advise to yourself while you were taking the class','I honestly could not have done better or had more fun'],['Best Joke','Adam thinks his jokes are funny']]]);
+        TAMap.set('Zachary Schlesinger',[[['tuesday','4-5'],['wednesday','7-8'],['friday','3-4']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Zoe Turner-Yovanovitch',[[['monday','6-7'],['thursday','5-7']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#GTGiraffe, #food, #puppy'],['Hobbies','Cooking, Singing, Lifting weights, Listening to music, playing soccer/other sports, traveling'],['Team sum(mask) or team length(vec(mask))','sum(sum(mask))'],['Pro switch or anti switch','switch all the way'],['Which team are you on?','Homework Team (is dope)'],['Favorite quote','\"A good leader takes a little more than his share of the blame, a little less than his share of the credit.\" -Arnold H. Glasow'],['Advise to your 5th grade self','Just join orchestra already'],['I cry while grading tests when...','someone capitalizes the \"f\" in \"function\"'],['Favorite Song','According to iTunes, the \"Wizard of Ahhhs\" Medley is pretty far up there.'],['I am the best in the world at:','multi-tasking, harmonizing'],['Mac (*barf*) or PC?','PC'],['When I was 5 years old, I wanted to be a...','\"a builder\" (so I guess some things never change)'],['Advise to yourself while you were taking the class','Did you know you can check your hw against the solution code? Yeah.']]]);
+        TAMap.set('Professor Smith',[[['monday','3:30-4:30'],['tuesday','3:30-4:30'],['wednesday','3:30-4:30']],[['Favorite Matlab Function','~textscan'],['Favorite Hashtag','a what?'],['Favorite Homework Problem','TNT'],['Hobbies','MATLAB modeling'],['Team sum(mask) or team length(vec(mask))','neither - length(find(mask))'],['Pro switch or anti switch','switch to what? FORTRAN?'],['Favorite quote','\"Never give up ... never give up ... never give up. Winston CHirchill at the Oxford Union.'],['Advise to your 5th grade self','Grow up. Quickly.'],['Favorite Song','Revelation Song'],['Mac (*barf*) or PC?','~barf'],['This one time at band camp...','banned camp?'],['Advise to yourself while you were taking the class','Shouldn\'t that be \'advice\'?'],['Best Joke','I sent 10 puns to a friend hoping one would make him laugh, but no pun in ten did.']]]);
+        TAMap.set('Professor Hudachek-Buswell',[[['tuesday','1-2'],['wednesday','4-5']],[['Favorite Matlab Function','strtok'],['Favorite Hashtag','#strtok'],['Favorite Homework Problem','The one with strtok'],['Hobbies','I like long walks on the strtok, strtokking in the woods, and just really a good strtok whenever I get the chance.'],['Most embarrassing story from middle school','One time I was walking down the hall and accidently spilled my strtok all over the floor'],['Team sum(mask) or team length(vec(mask))','There is no other function but strtok'],['Pro switch or anti switch','Pro strtok'],['Most embarrassing recitation story','One time I was teaching and almost forgot to strtok. So embarrassing.'],['Which team are you on?','The only team. Jacob. JK strtok'],['Favorite quote','\"To strtok, or not to strtok, that is the question. Wait that isn\'t a question, always strtok\"'],['Advise to your 5th grade self','Remember to floss your strtok every day.'],['I cry while grading tests when...','there isn\'t any strtok. So I add it myself.'],['Favorite Song','\"Sugar pie honey strtok\"'],['I am the best in the world at:','I am an olympic strtoker. My strtoks are heard around the world.'],['Mac (*barf*) or PC?','Any computer with a strtok.'],['This one time at band camp...','Why was I at bandcamp when I could have been strtoking.'],['When I was 5 years old, I wanted to be a...','Astronaut. Just kidding, there are no strtoks in space.'],['Advise to yourself while you were taking the class','Make sure you include a strtok on every line.'],['Best Joke','Why did the chicken cross the road? To get to the other strtok']]]);
+        TAMap.set('Professor McDaniel',[[['thursday','11-12'],['thursday','1-3']],[['Favorite Homework Problem','Temple of Time'],['Hobbies','camping, hiking, horseback riding'],['Most embarrassing story from middle school','I had a crush on my shop teacher.'],['Team sum(mask) or team length(vec(mask))','length(vec(mask))'],['Pro switch or anti switch','Pro switch'],['Favorite quote','\"Imagination is more important than knowledge.\" - Albert Einstein'],['Advise to your 5th grade self','Brush and floss every day'],['Favorite Song','\"What a Wonderful World\" - Louis Armstrong'],['Mac (*barf*) or PC?','Mac'],['When I was 5 years old, I wanted to be a...','Teacher']]]);
+
+
+
+        $(document).ready(function(){
+
+            hoverTimeout = null;
+            $("#funFactButtons").on('mouseover','.funFactButton',function(e){
+                clearTimeout(hoverTimeout);
+                $("#funFactInnerText").html($(this).data('answer'));
+                $("#funFactTitle").html($(this).data('question'));
+                $(".funFactContainer").addClass('funFactContainerShow');
+            });
+
+            $("#funFactButtons").on('mouseleave','.funFactButton',function(e){
+                hoverTimeout = setTimeout(function() {
+                    $(".funFactContainer").removeClass('funFactContainerShow');
+                }, 500);
+            });
+
+            function getRandomSubarray(arr, size) {
+                var shuffled = arr.slice(0), i = arr.length, temp, index;
+                while (i--) {
+                    index = Math.floor((i + 1) * Math.random());
+                    temp = shuffled[index];
+                    shuffled[index] = shuffled[i];
+                    shuffled[i] = temp;
+                }
+                return shuffled.slice(0, size);
+            }
+            
+            var switchPopupText = true;
+
+
+            $(".seeMoreLink").click(function(e){
+                var name = $(this).siblings('.TAInfo').children('.TAName').html();
+                var classInfo = $(this).siblings('.TAInfo').children('.TAName').attr('data-classInfo');
+                var email = $(this).siblings('.contactSection').children('.contactList').children('#email').data('email');
+                var section = $(this).siblings('.TAInfo').children('.TASection').html();
+                var recLocation = $(this).siblings('.TAInfo').children('.TASection').attr('data-recitationLocation');
+                var recTime = $(this).siblings('.TAInfo').children('.TASection').attr('data-recitationTime');
+                var positionBadge = $(this).siblings('.TAPicture').children('.positionBadge');
+
+                var TAData = TAMap.get(name.replace("'",""));
+                var helpdeskTimes = TAData[0];
+                var funFacts = TAData[1];
+
+                var allHelpDeskTimes = '';
+                for(var i = 0; i<helpdeskTimes.length; i++){
+                    allHelpDeskTimes += getHelpdeskDiv(helpdeskTimes[i]);
+                }
+
+                funFactSubArray = getRandomSubarray(funFacts,5);
+
+                var allFunFacts = '';
+                for(var i = 0; i < funFactSubArray.length; i++){
+                    allFunFacts += getFunFactDiv(funFactSubArray[i],i+1);
+                }
+                allFunFacts += '<div class="funFactButton gradButton" data-question="Class and Major" data-answer="' + 
+                    classInfo + '"></div>';
+
+
+                $("#PopupPicDiv").removeClass();
+                $("#PopupPicDiv").addClass(name.replace(/ /g,'').replace("'","").toLowerCase() + 'horizontal');
+                $("#helpdeskInfo .infoSectionWrap").html(allHelpDeskTimes);
+                $("#funFactButtons").html(allFunFacts);
+                $("#popupTAName").html(name + '<div id="TAEmail">' + email + '</div>');
+                $("#popupSection").html(section);
+                $("#popupLocation").html(recLocation);
+                $("#popupTime").html(recTime);
+                
+                if(positionBadge.length && positionBadge.html().charAt(0)==='I' && switchPopupText){
+                    $("#recitationTitle").html("Lecture");
+                    $("#helpDeskTitle").html("Office Hours");
+                    switchPopupText = false;
+                }else if(!switchPopupText){
+                    $("#recitationTitle").html("Recitation");
+                    $("#helpDeskTitle").html("Help Desk");
+                    switchPopupText = true;
+                }
+                
+                $("#popupCover").show();
+                $("#TAInfoPopup").show();
+                
+            });
+
+            function getFunFactDiv(funFactArr,number){
+                return '<div class="funFactButton" ' + 
+                    'data-question=\"' + funFactArr[0] + '\" ' + 
+                    'data-answer=\"' + funFactArr[1].replace(/"/g, "'") + '\">' + number + '</div>';
+            }
+
+            function getHelpdeskDiv(helpDeskTimeArr){
+                return '<div class="recitationInfoSection clearfix">' + 
+                    '<div class="recitationInfoIcon ' + helpDeskTimeArr[0] + '"></div>' + 
+                    '<div class="recitationInfoData">'+ helpDeskTimeArr[1] + '</div></div>';
+            }
+
+            $("#closePopup").click(function(e){
+                $("#popupCover").hide();
+                $("#TAInfoPopup").hide();
+            });
+
+            $(".funFactLabel").click(function(e){
+                $(".funFactData").addClass('funFactDataShow');
+            });
+
+            var $grid = $('.grid').isotope({
+                itemSelector: '.TABlock',
+                layoutMode: 'fitRows',
+                masonryHorizontal: {
+                    rowHeight: 288
+                },
+                getSortData: {
+                    name: '.TAName',
+                    section: '.TASection', 
+                    position: function( itemElem ) {
+                        var weight = $( itemElem ).find('.positionBadge').text();
+                        if(weight.length){
+                            if(weight.charAt(0)==='I'){
+                                return 1;
+                            }else if(weight.substr(0,2)==='He'){
+                                return 2;
+                            }else if(weight.charAt(0)==='C'){
+                                return 3; 
+                            }else{
+                                return 4;
+                            }
+                        }else{
+                            return 99;
+                        }
+                    }
+                }
+            });
+
+            $("#sortByName").click(function(e){
+                $grid.isotope({ sortBy : 'name' }); 
+            });
+
+            $("#sortBySection").click(function(e){
+                $grid.isotope({ sortBy : 'section' }); 
+            });
+
+            $("#sortByPosition").click(function(e){
+                $grid.isotope({ sortBy : 'position' }); 
+            });
+
+            $("#sortByRandom").click(function(e){
+                $grid.isotope('shuffle'); 
+            });
+
+            $(".sortButton").on('click',function(e){
+                $("#sortByText").html("'" + $(this).attr('id').substr(6) + "'");
+            });
+
+
+            $grid.isotope({ sortBy : 'section' });
+
+        });
+    </script>
+    </body>
+</html>

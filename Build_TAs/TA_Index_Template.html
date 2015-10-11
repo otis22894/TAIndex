@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CS 1371 TA Index</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
+        <link href='TA%20Index.css' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="iso.js"></script>
+    </head>
+
+    <body>
+        <div id="pageWrap">
+            <div id="popupCover"></div>
+            <div id="TAInfoPopup">
+                <div id="closePopup">&#x2717;</div>
+                <div id="TAPopupPic">
+                    <div id="PopupPicDiv"></div>
+                    <div id="popupTAName">
+                        <div id="TAEmail"></div>
+                    </div>
+                </div>
+                <div id="TAFunFactsSection" class="clearfix">
+                    <div id="funFactsTitle">Fun Facts:</div>
+                    <div id="funFactButtons" class="clearfix"></div>
+                    <div class="funFactContainer">
+                        <div id="funFactTitle"></div>
+                        <div id="funFactInnerText"></div>
+                    </div>
+                </div>
+                <div id="TAInfoSection" class="clearfix">
+                    <div id="recitationInfo">
+                        <div class="sectionTitle" id="recitationTitle">Recitation</div>
+                        <div class="infoSectionWrap borderright">
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon teachIcon"></div>
+                                <div class="recitationInfoData" id="popupSection"></div>
+                            </div>
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon locationIcon"></div>
+                                <div class="recitationInfoData" id="popupLocation"></div>
+                            </div>
+                            <div class="recitationInfoSection clearfix">
+                                <div class="recitationInfoIcon timeIcon"></div>
+                                <div class="recitationInfoData" id="popupTime"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="helpdeskInfo">
+                        <div class="sectionTitle" id="helpDeskTitle">Help Desk</div>
+                        <div class="infoSectionWrap"></div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+        <div id="pageTitle">Meet Your Awesome TAs</div>
+        <div id="sortCode">>> TAOrder = sort(TAList, <span id="sortByText">'Section'</span>)</div>
+        <div id="sortButtons">
+            <div class="sortButton" id="sortByName">Name</div>
+            <div class="sortButton" id="sortBySection">Section</div>
+            <div class="sortButton" id="sortByPosition">Position</div>
+            <div class="sortButton" id="sortByRandom">I'm Feeling Lucky</div>
+        </div>
+        <div class="grid clearfix">
+            <!-- INSERT TA BLOCKS HERE -->
+        </div>
+        </div>
+
+    <script>
+
+        var TAMap = new Map();
+        
+        //INSERT MAP DATA HERE 
+
+        $(document).ready(function(){
+
+            hoverTimeout = null;
+            $("#funFactButtons").on('mouseover','.funFactButton',function(e){
+                clearTimeout(hoverTimeout);
+                $("#funFactInnerText").html($(this).data('answer'));
+                $("#funFactTitle").html($(this).data('question'));
+                $(".funFactContainer").addClass('funFactContainerShow');
+            });
+
+            $("#funFactButtons").on('mouseleave','.funFactButton',function(e){
+                hoverTimeout = setTimeout(function() {
+                    $(".funFactContainer").removeClass('funFactContainerShow');
+                }, 500);
+            });
+
+            function getRandomSubarray(arr, size) {
+                var shuffled = arr.slice(0), i = arr.length, temp, index;
+                while (i--) {
+                    index = Math.floor((i + 1) * Math.random());
+                    temp = shuffled[index];
+                    shuffled[index] = shuffled[i];
+                    shuffled[i] = temp;
+                }
+                return shuffled.slice(0, size);
+            }
+
+
+            $(".seeMoreLink").click(function(e){
+                var name = $(this).siblings('.TAInfo').children('.TAName').html();
+                var classInfo = $(this).siblings('.TAInfo').children('.TAName').attr('data-classInfo');
+                var email = $(this).siblings('.contactSection').children('.contactList').children('#email').data('email');
+                var section = $(this).siblings('.TAInfo').children('.TASection').html();
+                var recLocation = $(this).siblings('.TAInfo').children('.TASection').attr('data-recitationLocation');
+                var recTime = $(this).siblings('.TAInfo').children('.TASection').attr('data-recitationTime');
+
+                var TAData = TAMap.get(name.replace("'",""));
+                var helpdeskTimes = TAData[0];
+                var funFacts = TAData[1];
+
+                var allHelpDeskTimes = '';
+                for(var i = 0; i<helpdeskTimes.length; i++){
+                    allHelpDeskTimes += getHelpdeskDiv(helpdeskTimes[i]);
+                }
+
+                funFactSubArray = getRandomSubarray(funFacts,5);
+
+                var allFunFacts = '';
+                for(var i = 0; i < funFactSubArray.length; i++){
+                    allFunFacts += getFunFactDiv(funFactSubArray[i],i+1);
+                }
+                allFunFacts += '<div class="funFactButton gradButton" data-question="Class and Major" data-answer="' + 
+                    classInfo + '"></div>';
+
+
+                $("#PopupPicDiv").removeClass();
+                $("#PopupPicDiv").addClass(name.replace(/ /g,'').replace("'","").toLowerCase() + 'horizontal');
+                $("#helpdeskInfo .infoSectionWrap").html(allHelpDeskTimes);
+                $("#funFactButtons").html(allFunFacts);
+                $("#popupTAName").html(name + '<div id="TAEmail">' + email + '</div>');
+                $("#popupSection").html(section);
+                $("#popupLocation").html(recLocation);
+                $("#popupTime").html(recTime);
+                $("#popupCover").show();
+                $("#TAInfoPopup").show();
+            });
+
+            function getFunFactDiv(funFactArr,number){
+                return '<div class="funFactButton" ' + 
+                    'data-question=\"' + funFactArr[0] + '\" ' + 
+                    'data-answer=\"' + funFactArr[1].replace(/"/g, "'") + '\">' + number + '</div>';
+            }
+
+            function getHelpdeskDiv(helpDeskTimeArr){
+                return '<div class="recitationInfoSection clearfix">' + 
+                    '<div class="recitationInfoIcon ' + helpDeskTimeArr[0] + '"></div>' + 
+                    '<div class="recitationInfoData">'+ helpDeskTimeArr[1] + '</div></div>';
+            }
+
+            $("#closePopup").click(function(e){
+                $("#popupCover").hide();
+                $("#TAInfoPopup").hide();
+            });
+
+            $(".funFactLabel").click(function(e){
+                $(".funFactData").addClass('funFactDataShow');
+            });
+
+            var $grid = $('.grid').isotope({
+                itemSelector: '.TABlock',
+                layoutMode: 'fitRows',
+                masonryHorizontal: {
+                    rowHeight: 288
+                },
+                getSortData: {
+                    name: '.TAName',
+                    section: '.TASection', 
+                    position: function( itemElem ) {
+                        var weight = $( itemElem ).find('.positionBadge').text();
+                        if(weight.length){
+                            if(weight.substr(0,2)==='He'){
+                                return 1;
+                            }else if(weight.charAt(0)==='C'){
+                                return 2; 
+                            }else{
+                                return 3;
+                            }
+                        }else{
+                            return 99;
+                        }
+                    }
+                }
+            });
+
+            $("#sortByName").click(function(e){
+                $grid.isotope({ sortBy : 'name' }); 
+            });
+
+            $("#sortBySection").click(function(e){
+                $grid.isotope({ sortBy : 'section' }); 
+            });
+
+            $("#sortByPosition").click(function(e){
+                $grid.isotope({ sortBy : 'position' }); 
+            });
+
+            $("#sortByRandom").click(function(e){
+                $grid.isotope('shuffle'); 
+            });
+
+            $(".sortButton").on('click',function(e){
+                $("#sortByText").html("'" + $(this).attr('id').substr(6) + "'");
+            });
+
+
+            $grid.isotope({ sortBy : 'section' });
+
+        });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<div class="TABlock">
+    <div class="seeMoreLink">See More</div>
+    <div class="TAPicture">
+        <div class="circlePicContainer" id="~fullLower~Pic"></div>
+    </div>
+    <div class="TAInfo">
+        <div class="TAName" data-classInfo="~classInfo~">~Name~</div>
+        <div class="TASection" data-recitationLocation="~recLocation~" data-recitationTime="~recTime~">~Section~</div>
+    </div>
+    <div class="contactSection">
+        <div class="contactTitle">Contact ~First~:</div>
+        <div class="contactList">
+            <a title="desktop" href="mailto:~Email~?subject=[CS1371]" class="contactItem" id="email" data-email="~Email~"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=~Email~&su=[CS1371]" class="contactItem" id="gmail"></a>
+            <a href="http://mail.live.com/default.aspx?page=Compose&to=~Email~&subject=[CS1371]" class="contactItem" id="outlook"></a>
+        </div>
+    </div>
+</div>
